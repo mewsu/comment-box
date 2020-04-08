@@ -1,6 +1,6 @@
 # What is this?
 
-This is a mock implementation of the comment box comopnent.
+Mock implementation of a comment box component.
 
 # What was used?
 
