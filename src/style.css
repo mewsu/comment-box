@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.comment-container {
+  width: 90%;
+  height: 245px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: grid;
+  gap: 7px;
+  grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 5fr;
+}
+
+.flex-container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-picture {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-row {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.top-row span {
+  margin-right: 5%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.comment-body {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+}
+
+.bottom-row {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.bottom-row span {
+  margin-right: 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.user-name {
+  font-weight: bold;
+  flex-basis: auto;
+}
+
+.user-role {
+  font-weight: bold;
+  flex-basis: 30%;
+}
+.role-pill {
+  height: 50%;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border-radius: 1.5vw;
+  font-size: 80%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.time-posted {
+  font-size: 70%;
+}
+
+.palegray-smaller {
+  color: #8080807a;
+  font-size: 90%;
+}
+
+.avatar-img {
+  width: 50%;
+}
+
+.bolder {
+  color: #808080;
+}
+
+.bigger {
+  font-size: 120%;
+}
+
+.darker {
+  color: black;
+}
+
+.upvote-button,
+.downvote-button {
+  cursor: pointer;
+}
